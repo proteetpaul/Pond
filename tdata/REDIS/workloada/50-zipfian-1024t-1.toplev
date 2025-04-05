@@ -1,0 +1,134 @@
+38 events not counted
+# 5.01-full-perf on Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz [hsx/haswell]
+FE               Frontend_Bound                                                                            % Slots                            13.6  < [ 1.0%]
+RET              Retiring.Heavy_Operations.Microcode_Sequencer.Assists                                     % Slots_est                         0.0  < [ 1.0%]
+Info.Inst_Mix    IpCall                                                                                      Inst_Metric                      77.52   [ 1.0%]
+Info.Inst_Mix    IpTB                                                                                        Inst_Metric                       7.95   [ 1.0%]
+Info.Inst_Mix    BpTkBranch                                                                                  Metric                            1.95   [ 1.0%]
+BAD              Bad_Speculation                                                                           % Slots                             1.7  < [ 1.0%]
+BE               Backend_Bound                                                                             % Slots                            65.0    [ 1.0%]
+RET              Retiring                                                                                  % Slots                            19.6  < [ 1.0%]
+Info.Thread      SLOTS                                                                                       Count             6,153,061,791,144      [ 1.0%]
+Info.Core        CoreIPC                                                                                     Core_Metric                       0.53   [ 1.0%]
+Info.Inst_Mix    Instructions                                                                                Count               820,456,197,164      [ 1.0%]
+FE               Frontend_Bound.Fetch_Latency                                                              % Slots                             0.0  <
+FE               Frontend_Bound.Fetch_Bandwidth                                                            % Slots                             3.0    [ 1.0%]
+BAD              Bad_Speculation.Branch_Mispredicts                                                        % Slots                             1.7  < [ 1.0%]
+BAD              Bad_Speculation.Machine_Clears                                                            % Slots                             0.0    [ 1.0%]
+BE/Mem           Backend_Bound.Memory_Bound                                                                % Slots                            35.3    [ 1.0%]
+BE/Core          Backend_Bound.Core_Bound                                                                  % Slots                            29.7    [ 1.0%]
+RET              Retiring.Light_Operations                                                                 % Slots                            12.8  < [ 1.0%]
+RET              Retiring.Heavy_Operations                                                                 % Slots                             6.8  < [ 1.0%]
+FE               Frontend_Bound.Fetch_Latency.ICache_Misses                                                % Clocks                            5.2  < [ 1.0%]
+FE               Frontend_Bound.Fetch_Latency.ITLB_Misses                                                  % Clocks                            0.6  < [ 1.0%]
+FE               Frontend_Bound.Fetch_Latency.Branch_Resteers                                              % Clocks                            3.5  < [ 1.0%]
+FE               Frontend_Bound.Fetch_Latency.MS_Switches                                                  % Clocks_est                       17.6    [ 1.0%]
+FE               Frontend_Bound.Fetch_Latency.LCP                                                          % Clocks                            0.0    [ 1.0%]
+FE               Frontend_Bound.Fetch_Latency.DSB_Switches                                                 % Clocks                            0.4    [ 1.0%]
+FE               Frontend_Bound.Fetch_Bandwidth.MITE                                                       % Slots_est                         6.7  < [ 1.0%]
+FE               Frontend_Bound.Fetch_Bandwidth.DSB                                                        % Slots_est                         5.4  < [ 1.0%]
+Info.Thread      UpTB                                                                                        Metric                           11.68   [ 1.0%]
+Info.Frontend    DSB_Coverage                                                                                Metric                            0.34   [ 1.0%]
+Info.Frontend    TBpC                                                                                        Metric                            0.07   [ 1.0%]
+BE/Mem           Backend_Bound.Memory_Bound.L1_Bound                                                       % Stalls                           14.4    [ 1.0%]
+BE/Mem           Backend_Bound.Memory_Bound.L2_Bound                                                       % Stalls                            0.0  <
+BE/Mem           Backend_Bound.Memory_Bound.L3_Bound                                                       % Stalls                            0.0  <
+Info.Memory      L1MPKI                                                                                      Metric                            0.00  
+Info.Memory      L2MPKI                                                                                      Metric                            0.00  
+BE/Mem           Backend_Bound.Memory_Bound.DRAM_Bound                                                     % Stalls                            0.0  <
+BE/Mem           Backend_Bound.Memory_Bound.Store_Bound                                                    % Stalls                            4.8  < [ 1.0%]
+Info.Memory      Load_Miss_Real_Latency                                                                      Clocks_Latency                    0.00  
+Info.Memory      MLP                                                                                         Metric                            1.59   [ 1.0%]
+BE/Mem           Backend_Bound.Memory_Bound.L1_Bound.DTLB_Load                                             % Clocks_est                        4.7  < [ 1.0%]
+BE/Mem           Backend_Bound.Memory_Bound.Store_Bound.DTLB_Store                                         % Clocks_est                        1.9  < [ 1.0%]
+Info.Memory.TLB  Page_Walks_Utilization                                                                      Core_Metric                       0.03   [ 1.0%]
+BE/Mem           Backend_Bound.Memory_Bound.L1_Bound.Store_Fwd_Blk                                         % Clocks_est                        0.2  < [ 1.0%]
+BE/Mem           Backend_Bound.Memory_Bound.L1_Bound.Lock_Latency                                          % Clocks                            0.0  <
+BE/Mem           Backend_Bound.Memory_Bound.L3_Bound.Contested_Accesses                                    % Clocks_est                        0.0  <
+BE/Mem           Backend_Bound.Memory_Bound.Store_Bound.Store_Latency                                      % Clocks_est                        0.0  <
+BE/Mem           Backend_Bound.Memory_Bound.Store_Bound.False_Sharing                                      % Clocks_est                        0.2  < [ 1.0%]
+Info.Memory.Latency Load_L2_Miss_Latency                                                                     Clocks_Latency                  173.97   [ 1.0%]
+BE/Mem           Backend_Bound.Memory_Bound.L3_Bound.Data_Sharing                                          % Clocks_est                        0.0  <
+BE/Mem           Backend_Bound.Memory_Bound.L3_Bound.SQ_Full                                               % Clocks                            0.1    [ 1.0%]
+BE/Mem           Backend_Bound.Memory_Bound.DRAM_Bound.MEM_Bandwidth                                       % Clocks                            2.5    [ 1.0%]
+BE/Mem           Backend_Bound.Memory_Bound.DRAM_Bound.MEM_Latency                                         % Clocks                           22.2  < [ 1.0%]
+BE/Mem           Backend_Bound.Memory_Bound.DRAM_Bound.MEM_Latency.Remote_Cache                            % Clocks_est                        0.0  <
+Info.Memory      L2MPKI_RFO                                                                                  Metric                            0.00  
+Info.Memory.Latency Load_L2_MLP                                                                              Metric                            2.55   [ 1.0%]
+Info.Memory.Latency Data_L2_MLP                                                                              Metric                            2.65   [ 1.0%]
+BE/Mem           Backend_Bound.Memory_Bound.L1_Bound.Split_Loads                                           % Clocks_calc                       0.0  <
+BE/Mem           Backend_Bound.Memory_Bound.L1_Bound.4K_Aliasing                                           % Clocks_est                        2.4  < [ 1.0%]
+BE/Mem           Backend_Bound.Memory_Bound.L1_Bound.FB_Full                                               % Clocks_calc                       0.0   <==
+Info.Memory      L1D_Cache_Fill_BW                                                                           Metric                           12.99   [ 1.0%]
+Info.Memory      L2_Cache_Fill_BW                                                                            Metric                           15.01   [ 1.0%]
+Info.Memory      L3_Cache_Fill_BW                                                                            Metric                            1.20   [ 1.0%]
+Info.Memory.Core L1D_Cache_Fill_BW_2T                                                                        Core_Metric                      12.99   [ 1.0%]
+Info.Memory.Core L2_Cache_Fill_BW_2T                                                                         Core_Metric                      15.01   [ 1.0%]
+Info.Memory.Core L3_Cache_Fill_BW_2T                                                                         Core_Metric                       1.20   [ 1.0%]
+Info.System      DRAM_BW_Use                                                                                 GB/sec                            2.11  
+Info.System      MEM_Parallel_Reads                                                                          System_Metric                     1.18   [49.0%]
+BE/Mem           Backend_Bound.Memory_Bound.L3_Bound.L3_Hit_Latency                                        % Clocks_est                        0.0  <
+Info.System      MEM_Read_Latency                                                                            NanoSeconds                      13.58   [49.0%]
+BE/Mem           Backend_Bound.Memory_Bound.DRAM_Bound.MEM_Latency.Local_MEM                               % Clocks_est                        0.0  <
+BE/Mem           Backend_Bound.Memory_Bound.DRAM_Bound.MEM_Latency.Remote_MEM                              % Clocks_est                        0.0  <
+BE/Mem           Backend_Bound.Memory_Bound.Store_Bound.Split_Stores                                       % Core_Utilization                  0.0  <
+BE/Core          Backend_Bound.Core_Bound.Divider                                                          % Clocks                            0.1  < [ 1.0%]
+BE/Core          Backend_Bound.Core_Bound.Ports_Utilization.Ports_Utilized_3m                              % Clocks                            0.0  <
+BE/Core          Backend_Bound.Core_Bound.Ports_Utilization                                                % Clocks                           28.2    [ 1.0%]
+BE/Core          Backend_Bound.Core_Bound.Ports_Utilization.Ports_Utilized_0                               % Clocks                            0.0  <
+BE/Core          Backend_Bound.Core_Bound.Ports_Utilization.Ports_Utilized_1                               % Clocks                           24.4    [ 1.0%]
+BE/Core          Backend_Bound.Core_Bound.Ports_Utilization.Ports_Utilized_2                               % Clocks                           10.0  < [ 1.0%]
+Info.Core        ILP                                                                                         Metric                            1.65   [ 1.0%]
+BE/Core          Backend_Bound.Core_Bound.Ports_Utilization.Ports_Utilized_3m.ALU_Op_Utilization           % Core_Execution                   12.6  < [ 1.0%]
+BE/Core          Backend_Bound.Core_Bound.Ports_Utilization.Ports_Utilized_3m.ALU_Op_Utilization.Port_0    % Core_Clocks                       4.4  < [ 1.0%]
+BE/Core          Backend_Bound.Core_Bound.Ports_Utilization.Ports_Utilized_3m.ALU_Op_Utilization.Port_1    % Core_Clocks                       6.3  < [ 1.0%]
+BE/Core          Backend_Bound.Core_Bound.Ports_Utilization.Ports_Utilized_3m.ALU_Op_Utilization.Port_5    % Core_Clocks                       7.1  < [ 1.0%]
+BE/Core          Backend_Bound.Core_Bound.Ports_Utilization.Ports_Utilized_3m.ALU_Op_Utilization.Port_6    % Core_Clocks                      32.4  < [ 1.0%]
+BE/Core          Backend_Bound.Core_Bound.Ports_Utilization.Ports_Utilized_3m.Load_Op_Utilization          % Core_Execution                    5.4  < [ 1.0%]
+BE/Core          Backend_Bound.Core_Bound.Ports_Utilization.Ports_Utilized_3m.Load_Op_Utilization.Port_2   % Core_Clocks                       7.3  < [ 1.0%]
+BE/Core          Backend_Bound.Core_Bound.Ports_Utilization.Ports_Utilized_3m.Load_Op_Utilization.Port_3   % Core_Clocks                       7.5  < [ 1.0%]
+BE/Core          Backend_Bound.Core_Bound.Ports_Utilization.Ports_Utilized_3m.Store_Op_Utilization         % Core_Execution                    0.0  <
+BE/Core          Backend_Bound.Core_Bound.Ports_Utilization.Ports_Utilized_3m.Store_Op_Utilization.Port_4  % Core_Clocks                       6.5  < [ 1.0%]
+BE/Core          Backend_Bound.Core_Bound.Ports_Utilization.Ports_Utilized_3m.Store_Op_Utilization.Port_7  % Core_Clocks                       2.5  < [ 1.0%]
+RET              Retiring.Heavy_Operations.Microcode_Sequencer                                             % Slots                             6.8    [ 1.0%]
+RET              Retiring.Heavy_Operations.Microcode_Sequencer.CISC                                        % Slots                             6.8  < [ 1.0%]
+Info.Thread      IPC                                                                                         Metric                            0.53   [ 1.0%]
+Info.Thread      UopPI                                                                                       Metric                            0.00  
+Info.Pipeline    Retire                                                                                      Metric                            1.93   [ 1.0%]
+Info.System      CPU_Utilization                                                                             Metric                            0.10   [ 1.0%]
+Info.System      CPUs_Utilized                                                                               Metric                            0.99   [ 1.0%]
+Info.System      Core_Frequency                                                                              System_Metric                    25.94   [ 1.0%]
+Info.System      Time                                                                                        Seconds                          60.01  
+Info.Thread      CPI                                                                                         Metric                            1.87   [ 1.0%]
+Info.Memory      L3MPKI                                                                                      Metric                            0.00  
+Info.Thread      CLKS                                                                                        Count             1,538,265,447,786      [ 1.0%]
+Info.Core        CORE_CLKS                                                                                   Count             1,538,265,447,786      [ 1.0%]
+Info.System      SMT_2T_Utilization                                                                          Core_Metric                       0.00  
+Info.Inst_Mix    IpLoad                                                                                      Inst_Metric                       0.00  
+Info.Inst_Mix    IpStore                                                                                     Inst_Metric                       0.00  
+Info.Inst_Mix    IpBranch                                                                                    Inst_Metric                       0.00  
+Info.Frontend    IpUnknown_Branch                                                                            Metric                          310.80   [ 1.0%]
+Info.Bad_Spec    IpMispredict                                                                                Inst_Metric                     456.15   [ 1.0%]
+Info.Bad_Spec    IpMisp_Indirect                                                                             Inst_Metric                  36,300.4    [ 1.0%]
+Info.System      Uncore_Frequency                                                                            System_Metric                    21.70   [75.0%]
+Info.System      Socket_CLKS                                                                                 Count             1,302,225,689,334      [75.0%]
+Info.System      Turbo_Utilization                                                                           Core_Metric                       1.00   [ 1.0%]
+Info.System      Kernel_Utilization                                                                          Metric                            0.00   
+Info.System      Kernel_CPI                                                                                  Metric                            1.96   [ 1.0%]
+Info.System      IpFarBranch                                                                                 Inst_Metric                  31,301.3    [ 1.0%]
+MUX                                                                                                        %                                   0.00  
+Context switches                                                                                             Metric                    8,371,491.0   
+Minor faults                                                                                                 Metric                      988,439.0   
+Major faults                                                                                                 Metric                           47.00  
+Migrations                                                                                                   Metric                      262,189.0   
+Syscalls                                                                                                     Metric                            0.00  
+Interrupts                                                                                                   Metric                            0.00  
+IPIs                                                                                                         Metric                            0.00  
+Workqueues                                                                                                   Metric                            0.00  
+BlockIOs                                                                                                     Metric                            0.00  
+NetworkTX                                                                                                    Metric                            0.00  
+NetworkRX                                                                                                    Metric                            0.00  
+Frequency                                                                                                    CoreMetric                        0.00  
+Run toplev --describe FB_Full^ to get more information on bottleneck
+28 nodes had zero counts: Assists Contested_Accesses DRAM_Bound Data_Sharing FB_Full IpBranch IpLoad IpStore L1MPKI L2MPKI L2MPKI_RFO L2_Bound L3MPKI L3_Bound L3_Hit_Latency Load_Miss_Real_Latency Local_MEM Lock_Latency MEM_Bandwidth Ports_Utilized_0 Ports_Utilized_3m Remote_Cache Remote_MEM Split_Loads Split_Stores Store_Latency Store_Op_Utilization UopPI
+Add --run-sample to find locations

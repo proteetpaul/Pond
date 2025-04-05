@@ -1,0 +1,288 @@
+[WARN]  Running against a source checkout. In order to get our runtime dependencies we'll have to invoke Maven. Depending on the state of your system, this may take ~30-45 seconds
+[DEBUG]  Running 'mvn -B -pl site.ycsb:redis-binding -am package -DskipTests dependency:list -DoutputAbsoluteArtifactFilename -DappendOutput=false -DoutputFile=/tmp/tmpm4vvedja'
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] YCSB Root                                                          [pom]
+[INFO] Core YCSB                                                          [jar]
+[INFO] Per Datastore Binding descriptor                                   [jar]
+[INFO] YCSB Datastore Binding Parent                                      [pom]
+[INFO] Redis DB Binding                                                   [jar]
+[INFO] 
+[INFO] ---------------------------< site.ycsb:root >---------------------------
+[INFO] Building YCSB Root 0.18.0-SNAPSHOT                                 [1/5]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ root ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ root ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:list (default-cli) @ root ---
+[INFO] 
+[INFO] ---------------------------< site.ycsb:core >---------------------------
+[INFO] Building Core YCSB 0.18.0-SNAPSHOT                                 [2/5]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ core ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ core ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 63 source files to /users/cgw/YCSB/core/target/classes
+[INFO] /users/cgw/YCSB/core/src/main/java/site/ycsb/DBFactory.java: Some input files use or override a deprecated API.
+[INFO] /users/cgw/YCSB/core/src/main/java/site/ycsb/DBFactory.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ core ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /users/cgw/YCSB/core/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ core ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ core ---
+[INFO] Building jar: /users/cgw/YCSB/core/target/core-0.18.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:list (default-cli) @ core ---
+[INFO] 
+[INFO] --------------< site.ycsb:datastore-specific-descriptor >---------------
+[INFO] Building Per Datastore Binding descriptor 0.18.0-SNAPSHOT          [3/5]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ datastore-specific-descriptor ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ datastore-specific-descriptor ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ datastore-specific-descriptor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ datastore-specific-descriptor ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ datastore-specific-descriptor ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /users/cgw/YCSB/binding-parent/datastore-specific-descriptor/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ datastore-specific-descriptor ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ datastore-specific-descriptor ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ datastore-specific-descriptor ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:list (default-cli) @ datastore-specific-descriptor ---
+[INFO] 
+[INFO] ----------------------< site.ycsb:binding-parent >----------------------
+[INFO] Building YCSB Datastore Binding Parent 0.18.0-SNAPSHOT             [4/5]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ binding-parent ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ binding-parent ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:copy-dependencies (stage-dependencies) @ binding-parent ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:list (default-cli) @ binding-parent ---
+[INFO] 
+[INFO] ----------------------< site.ycsb:redis-binding >-----------------------
+[INFO] Building Redis DB Binding 0.18.0-SNAPSHOT                          [5/5]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ redis-binding ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.16:check (validate) @ redis-binding ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ redis-binding ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /users/cgw/YCSB/redis/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ redis-binding ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /users/cgw/YCSB/redis/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ redis-binding ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /users/cgw/YCSB/redis/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ redis-binding ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ redis-binding ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ redis-binding ---
+[INFO] Building jar: /users/cgw/YCSB/redis/target/redis-binding-0.18.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:copy-dependencies (stage-dependencies) @ redis-binding ---
+[INFO] redis.clients:jedis:jar:2.9.0 already exists in destination.
+[INFO] org.apache.commons:commons-pool2:jar:2.4.2 already exists in destination.
+[INFO] 
+[INFO] --- maven-assembly-plugin:2.5.5:single (default) @ redis-binding ---
+[WARNING] The following patterns were never triggered in this artifact exclusion filter:
+o  '*:sources'
+
+[INFO] Building tar: /users/cgw/YCSB/redis/target/ycsb-redis-binding-0.18.0-SNAPSHOT.tar.gz
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.10:list (default-cli) @ redis-binding ---
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for YCSB Root 0.18.0-SNAPSHOT:
+[INFO] 
+[INFO] YCSB Root .......................................... SUCCESS [  1.356 s]
+[INFO] Core YCSB .......................................... SUCCESS [  2.384 s]
+[INFO] Per Datastore Binding descriptor ................... SUCCESS [  0.156 s]
+[INFO] YCSB Datastore Binding Parent ...................... SUCCESS [  0.358 s]
+[INFO] Redis DB Binding ................................... SUCCESS [  0.724 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.424 s
+[INFO] Finished at: 2025-04-04T14:02:41Z
+[INFO] ------------------------------------------------------------------------
+java -cp /users/cgw/YCSB/redis/conf:/users/cgw/YCSB/redis/target/redis-binding-0.18.0-SNAPSHOT.jar:/root/.m2/repository/org/apache/htrace/htrace-core4/4.1.0-incubating/htrace-core4-4.1.0-incubating.jar:/root/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/root/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.4/jackson-mapper-asl-1.9.4.jar:/root/.m2/repository/redis/clients/jedis/2.9.0/jedis-2.9.0.jar:/root/.m2/repository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar:/root/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.4/jackson-core-asl-1.9.4.jar:/users/cgw/YCSB/core/target/core-0.18.0-SNAPSHOT.jar site.ycsb.Client -db site.ycsb.db.RedisClient -P workloads/workloada -P /users/cgw/Pond/redis/redis-run2.properties -p redis.host=localhost -p requestdistribution=uniform -p threadcount=1024 -p measurement.raw.output_file=/users/cgw/Pond/tdata/REDIS///workloada/L100-uniform-1024t-1.rawlat -t
+Command line: -db site.ycsb.db.RedisClient -P workloads/workloada -P /users/cgw/Pond/redis/redis-run2.properties -p redis.host=localhost -p requestdistribution=uniform -p threadcount=1024 -p measurement.raw.output_file=/users/cgw/Pond/tdata/REDIS///workloada/L100-uniform-1024t-1.rawlat -t
+YCSB Client 0.18.0-SNAPSHOT
+
+Loading workload...
+Starting test.
+DBWrapper: report latency for each error is false and specific error codes to track for latency are: []
+Maximum execution time specified as: 120 secs
+Could not wait until max specified time, TerminatorThread interrupted.
+[OVERALL], RunTime(ms), 111029
+[OVERALL], Throughput(ops/sec), 90066.55918723937
+[TOTAL_GCS_G1_Young_Generation], Count, 13
+[TOTAL_GC_TIME_G1_Young_Generation], Time(ms), 37
+[TOTAL_GC_TIME_%_G1_Young_Generation], Time(%), 0.033324626899278564
+[TOTAL_GCS_G1_Concurrent_GC], Count, 0
+[TOTAL_GC_TIME_G1_Concurrent_GC], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Concurrent_GC], Time(%), 0.0
+[TOTAL_GCS_G1_Old_Generation], Count, 0
+[TOTAL_GC_TIME_G1_Old_Generation], Time(ms), 0
+[TOTAL_GC_TIME_%_G1_Old_Generation], Time(%), 0.0
+[TOTAL_GCs], Count, 13
+[TOTAL_GC_TIME], Time(ms), 37
+[TOTAL_GC_TIME_%], Time(%), 0.033324626899278564
+[READ], Operations, 1065542
+[READ], AverageLatency(us), 11290.210731252264
+[READ], MinLatency(us), 22
+[READ], MaxLatency(us), 329471
+[READ], 5thPercentileLatency(us), 10583
+[READ], 10thPercentileLatency(us), 10631
+[READ], 15thPercentileLatency(us), 10671
+[READ], 20thPercentileLatency(us), 10703
+[READ], 25thPercentileLatency(us), 10735
+[READ], 30thPercentileLatency(us), 10775
+[READ], 35thPercentileLatency(us), 10815
+[READ], 40thPercentileLatency(us), 10871
+[READ], 45thPercentileLatency(us), 10951
+[READ], 50thPercentileLatency(us), 11047
+[READ], 55thPercentileLatency(us), 11223
+[READ], 60thPercentileLatency(us), 11351
+[READ], 65thPercentileLatency(us), 11447
+[READ], 70thPercentileLatency(us), 11583
+[READ], 75thPercentileLatency(us), 11783
+[READ], 80thPercentileLatency(us), 11935
+[READ], 85thPercentileLatency(us), 12023
+[READ], 90thPercentileLatency(us), 12183
+[READ], 95thPercentileLatency(us), 12775
+[READ], 99thPercentileLatency(us), 14039
+[READ], 99.9PercentileLatency(us), 23151
+[READ], 99.99PercentileLatency(us), 48127
+[READ], 99.999PercentileLatency(us), 49151
+[READ], 100thPercentileLatency(us), 329471
+[READ], Return=OK, 1065542
+[READ], Return=ERROR, 3934307
+[CLEANUP], Operations, 1024
+[CLEANUP], AverageLatency(us), 38.7734375
+[CLEANUP], MinLatency(us), 23
+[CLEANUP], MaxLatency(us), 874
+[CLEANUP], 5thPercentileLatency(us), 27
+[CLEANUP], 10thPercentileLatency(us), 28
+[CLEANUP], 15thPercentileLatency(us), 28
+[CLEANUP], 20thPercentileLatency(us), 29
+[CLEANUP], 25thPercentileLatency(us), 29
+[CLEANUP], 30thPercentileLatency(us), 31
+[CLEANUP], 35thPercentileLatency(us), 32
+[CLEANUP], 40thPercentileLatency(us), 33
+[CLEANUP], 45thPercentileLatency(us), 34
+[CLEANUP], 50thPercentileLatency(us), 35
+[CLEANUP], 55thPercentileLatency(us), 36
+[CLEANUP], 60thPercentileLatency(us), 37
+[CLEANUP], 65thPercentileLatency(us), 38
+[CLEANUP], 70thPercentileLatency(us), 39
+[CLEANUP], 75thPercentileLatency(us), 40
+[CLEANUP], 80thPercentileLatency(us), 42
+[CLEANUP], 85thPercentileLatency(us), 44
+[CLEANUP], 90thPercentileLatency(us), 48
+[CLEANUP], 95thPercentileLatency(us), 66
+[CLEANUP], 99thPercentileLatency(us), 94
+[CLEANUP], 99.9PercentileLatency(us), 313
+[CLEANUP], 99.99PercentileLatency(us), 874
+[CLEANUP], 99.999PercentileLatency(us), 874
+[CLEANUP], 100thPercentileLatency(us), 874
+[READ-FAILED], Operations, 3934307
+[READ-FAILED], AverageLatency(us), 11314.74941253949
+[READ-FAILED], MinLatency(us), 20
+[READ-FAILED], MaxLatency(us), 510463
+[READ-FAILED], 5thPercentileLatency(us), 10559
+[READ-FAILED], 10thPercentileLatency(us), 10623
+[READ-FAILED], 15thPercentileLatency(us), 10671
+[READ-FAILED], 20thPercentileLatency(us), 10711
+[READ-FAILED], 25thPercentileLatency(us), 10743
+[READ-FAILED], 30thPercentileLatency(us), 10791
+[READ-FAILED], 35thPercentileLatency(us), 10831
+[READ-FAILED], 40thPercentileLatency(us), 10871
+[READ-FAILED], 45thPercentileLatency(us), 10927
+[READ-FAILED], 50thPercentileLatency(us), 10999
+[READ-FAILED], 55thPercentileLatency(us), 11127
+[READ-FAILED], 60thPercentileLatency(us), 11303
+[READ-FAILED], 65thPercentileLatency(us), 11423
+[READ-FAILED], 70thPercentileLatency(us), 11583
+[READ-FAILED], 75thPercentileLatency(us), 11783
+[READ-FAILED], 80thPercentileLatency(us), 11903
+[READ-FAILED], 85thPercentileLatency(us), 11999
+[READ-FAILED], 90thPercentileLatency(us), 12135
+[READ-FAILED], 95thPercentileLatency(us), 12807
+[READ-FAILED], 99thPercentileLatency(us), 14319
+[READ-FAILED], 99.9PercentileLatency(us), 23535
+[READ-FAILED], 99.99PercentileLatency(us), 48607
+[READ-FAILED], 99.999PercentileLatency(us), 379647
+[READ-FAILED], 100thPercentileLatency(us), 510463
+[UPDATE], Operations, 5000151
+[UPDATE], AverageLatency(us), 11314.117852240863
+[UPDATE], MinLatency(us), 24
+[UPDATE], MaxLatency(us), 510975
+[UPDATE], 5thPercentileLatency(us), 10567
+[UPDATE], 10thPercentileLatency(us), 10631
+[UPDATE], 15thPercentileLatency(us), 10671
+[UPDATE], 20thPercentileLatency(us), 10711
+[UPDATE], 25thPercentileLatency(us), 10743
+[UPDATE], 30thPercentileLatency(us), 10783
+[UPDATE], 35thPercentileLatency(us), 10831
+[UPDATE], 40thPercentileLatency(us), 10879
+[UPDATE], 45thPercentileLatency(us), 10935
+[UPDATE], 50thPercentileLatency(us), 11007
+[UPDATE], 55thPercentileLatency(us), 11151
+[UPDATE], 60thPercentileLatency(us), 11319
+[UPDATE], 65thPercentileLatency(us), 11431
+[UPDATE], 70thPercentileLatency(us), 11583
+[UPDATE], 75thPercentileLatency(us), 11783
+[UPDATE], 80thPercentileLatency(us), 11911
+[UPDATE], 85thPercentileLatency(us), 12007
+[UPDATE], 90thPercentileLatency(us), 12151
+[UPDATE], 95thPercentileLatency(us), 12799
+[UPDATE], 99thPercentileLatency(us), 14279
+[UPDATE], 99.9PercentileLatency(us), 23631
+[UPDATE], 99.99PercentileLatency(us), 48415
+[UPDATE], 99.999PercentileLatency(us), 379135
+[UPDATE], 100thPercentileLatency(us), 510975
+[UPDATE], Return=OK, 5000151

@@ -1,0 +1,115 @@
+Linux node0.cgw-249514.advosuwmadison-pg0.wisc.cloudlab.us 6.8.0-53-generic #55-Ubuntu SMP PREEMPT_DYNAMIC Fri Jan 17 15:37:52 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+--------------------------
+available: 2 nodes (0-1)
+node 0 cpus: 0 1 2 3 4 5 6 7 8 9
+node 0 size: 80456 MB
+node 0 free: 79639 MB
+node 1 cpus:
+node 1 size: 80586 MB
+node 1 free: 80295 MB
+node distances:
+node   0   1 
+  0:  10  21 
+  1:  21  10 
+--------------------------
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        46 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               40
+On-line CPU(s) list:                  0-9
+Off-line CPU(s) list:                 10-39
+Vendor ID:                            GenuineIntel
+BIOS Vendor ID:                       Intel(R) Corporation
+Model name:                           Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz
+BIOS Model name:                      Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz  CPU @ 2.6GHz
+BIOS CPU family:                      179
+CPU family:                           6
+Model:                                63
+Thread(s) per core:                   1
+Core(s) per socket:                   10
+Socket(s):                            1
+Stepping:                             2
+CPU(s) scaling MHz:                   79%
+CPU max MHz:                          3300.0000
+CPU min MHz:                          0.0000
+BogoMIPS:                             5187.90
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm cpuid_fault epb pti intel_ppin ssbd ibrs ibpb stibp tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm xsaveopt cqm_llc cqm_occup_llc dtherm ida arat pln pts vnmi md_clear flush_l1d
+Virtualization:                       VT-x
+L1d cache:                            320 KiB (10 instances)
+L1i cache:                            320 KiB (10 instances)
+L2 cache:                             2.5 MiB (10 instances)
+L3 cache:                             25 MiB (1 instance)
+NUMA node(s):                         2
+NUMA node0 CPU(s):                    0-9
+NUMA node1 CPU(s):                    
+Vulnerability Gather data sampling:   Not affected
+Vulnerability Itlb multihit:          KVM: Mitigation: VMX disabled
+Vulnerability L1tf:                   Mitigation; PTE Inversion; VMX conditional cache flushes, SMT disabled
+Vulnerability Mds:                    Mitigation; Clear CPU buffers; SMT disabled
+Vulnerability Meltdown:               Mitigation; PTI
+Vulnerability Mmio stale data:        Mitigation; Clear CPU buffers; SMT disabled
+Vulnerability Reg file data sampling: Not affected
+Vulnerability Retbleed:               Not affected
+Vulnerability Spec rstack overflow:   Not affected
+Vulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Retpolines; IBPB conditional; IBRS_FW; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+--------------------------
+MemTotal:       164908412 kB
+MemFree:        163773896 kB
+MemAvailable:   163150872 kB
+Buffers:            3832 kB
+Cached:           162904 kB
+SwapCached:            0 kB
+Active:           337936 kB
+Inactive:          91420 kB
+Active(anon):     283260 kB
+Inactive(anon):        0 kB
+Active(file):      54676 kB
+Inactive(file):    91420 kB
+Unevictable:       46684 kB
+Mlocked:           43612 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Zswap:                 0 kB
+Zswapped:              0 kB
+Dirty:                 4 kB
+Writeback:             0 kB
+AnonPages:        309336 kB
+Mapped:           154684 kB
+Shmem:              4900 kB
+KReclaimable:      29392 kB
+Slab:             219664 kB
+SReclaimable:      29392 kB
+SUnreclaim:       190272 kB
+KernelStack:        9952 kB
+PageTables:        10676 kB
+SecPageTables:         0 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    82454204 kB
+Committed_AS:   70255700 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      251276 kB
+VmallocChunk:          0 kB
+Percpu:            57440 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+Unaccepted:            0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      248636 kB
+DirectMap2M:     4880384 kB
+DirectMap1G:    164626432 kB
